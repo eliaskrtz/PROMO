@@ -8,16 +8,43 @@ header {
     padding: 0px, 0px, 0px, 0px;
 }
 
+body {
+    display: flex;
+    flex-flow: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
 h1 {
     display: flex;
     justify-content: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 12vw;
+    font-size: 5vw;
     width: 80%;
     height: 100%;
 }
 
-body {
+button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#topright {
     display: flex;
-    flex-flow: column;
+    height: 6.5%;
+    min-height: 2vw;
+    max-height: 5vw;
+    width: 14%;
+    flex-direction: column;
+    justify-content: center;
+    background: none;
+    border: 0.1em solid white;
 }
