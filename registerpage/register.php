@@ -32,15 +32,33 @@
       }
     }
      ?>
-    <h1>Account erstellen</h1>
+    <h1 id="mainheading">ProMotion</h1>
+    <h2>Register</h2>
     <form action="register.php" method="post">
-      <input type="text" name="username" placeholder="Username" required><br>
-      <input type="text" name="email" placeholder="Email" required><br>
-      <input type="password" name="pw" placeholder="Passwort" required><br>
-      <input type="password" name="pw2" placeholder="Passwort wiederholen" required><br>
-      <button type="submit" name="submit">Erstellen</button>
+      <div class="container">
+        <div class="textbox">
+          <input type="text" placeholder="Enter Username" name="username" required>
+        </div>
+        <div class="textbox">
+        <input type="text" placeholder="Enter Email" name="email" required>
+        </div>
+        <div class="textbox">
+        <input type="password" placeholder="Enter Password" name="pw" required>
+        </div>
+        <div class="textbox">
+          <input type="password" placeholder="Verify Password" name="pw2" required>
+        </div>
+
+        <div class="textbox">
+          <button type="submit" name="submit" class="registerbutton">Register</button>
+        </div>
+      </div>
+
+      <div class="bottomcontainer" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <a href="/loginpage/index.php" id="alreadyacc">Hast du bereits einen Account?</a>
+      </div>
     </form>
     <br>
-    <a href="index.php">Hast du bereits einen Account?</a>
   </body>
 </html>
