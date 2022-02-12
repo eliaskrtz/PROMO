@@ -23,9 +23,9 @@
           $hash = password_hash($_POST["pw"], PASSWORD_BCRYPT);
           $stmt->bindParam(":pw", $hash);
           $stmt->execute();
-          echo "Dein Account wurde angelegt";
+          header("Location: ../loginpage/index.php");
         } else {
-          echo "Die Passwörter stimmen nicht überein";
+          echo "Die Passwörter stimmen nicht überein.";
         }
       } else {
         echo "Der Username ist bereits vergeben";
