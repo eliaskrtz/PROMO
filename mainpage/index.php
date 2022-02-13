@@ -21,7 +21,7 @@ if(!isset($_SESSION["username"])){
         </a>
 
         <div id="toprightname">
-            <p>username</p>
+            <p><?php echo ($_SESSION["username"]) ?></p>
         </div>
 
         <div id="currentpro">
