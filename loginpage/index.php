@@ -33,7 +33,7 @@
      ?>
 
      <h2>Login</h2>
-    <form action="register.php" method="post">
+    <form action="index.php" method="post">
       <div class="container">
         <div class="textbox">
           <input type="text" placeholder="Enter Username" name="username" required>
