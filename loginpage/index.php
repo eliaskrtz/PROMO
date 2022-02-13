@@ -31,32 +31,25 @@
       }
     }
      ?>
-    <form action="index.php" method="post">
-       <div class="container">
-         <div class="text">
-         <label for="uname"><b>Username</b></label>
-         </div>
-         <div class="textbox">
-           <input type="text" placeholder="Enter Username" name="username" required>
-         </div>
-        
-         <div class="text">
-             <label for="psw"><b>Password</b></label>
-         </div>
-         <div class="textbox">
-           <input type="password" placeholder="Enter Password" name="password" required>
-         </div>
- 
-           <button type="submit" name="submit" class="loginbutton">Login</button>
-           <label>
-             <input type="checkbox" checked="checked" name="remember"> Remember me
-           </label>
-         </div>
+
+     <h2>Login</h2>
+    <form action="register.php" method="post">
+      <div class="container">
+        <div class="textbox">
+          <input type="text" placeholder="Enter Username" name="username" required>
+        </div>
+        <div class="textbox">
+        <input type="password" placeholder="Enter Password" name="password" required>
+        </div>
+        <div class="textbox">
+          <button type="submit" name="submit" class="registerbutton">Login</button>
+        </div>
+      </div>
       
-         <div class="bottomcontainer" style="background-color:#f1f1f1">
-           <button type="button" class="cancelbtn">Cancel</button>
-           <span class="psw">Forgot <a href="#">password?</a></span>
-         </div>
-      </form>
+      <div class="bottomcontainer" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <a href="../registerpage/register.php" id="register">Noch keinen Account?</a>
+      </div>
+    </form>
    </body>
 </html>
