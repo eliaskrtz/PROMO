@@ -47,7 +47,9 @@
       </div>
       
       <div class="bottomcontainer" style="background-color:#f1f1f1">
+      <a href="../startpage/index.php">  
         <button type="button" class="cancelbtn">Cancel</button>
+      </a>
         <a href="../registerpage/register.php" id="register">Noch keinen Account?</a>
       </div>
     </form>

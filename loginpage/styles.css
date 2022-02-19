@@ -21,9 +21,12 @@ body {
 }
 
 a {
-   text-decoration: none;
-   color: #1e1e1e;
-   margin-left: 3%;
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+#register {
+margin-left: 3%;
 }
 
  /* Full-width inputs */

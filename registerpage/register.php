@@ -55,7 +55,9 @@
       </div>
 
       <div class="bottomcontainer" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancel</button>
+        <a href="../startpage/index.php">
+          <button type="button" class="cancelbtn">Cancel</button>
+        </a>
         <a href="/loginpage/index.php" id="alreadyacc">Hast du bereits einen Account?</a>
       </div>
     </form>

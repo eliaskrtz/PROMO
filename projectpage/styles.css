@@ -55,21 +55,7 @@ button {
     right: -84vw;
 }
 
-#createnewprojectbtn{
-    display: flex;
-    height: 6.5%;
-    min-height: 2vw;
-    max-height: 5vw;
-    width:100%;
-    flex-direction: column;
-    justify-content: center;
-    background: none;
-    border: 0.1em solid white;
-    margin-top: 2%;
-    /*position*/
-    position: relative;
-    top: -1.5vw;
-}
+
 
 #toprightname {
     display: flex;

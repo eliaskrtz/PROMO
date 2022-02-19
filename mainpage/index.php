@@ -23,7 +23,9 @@ if(!isset($_SESSION["username"])){
         <div id="toprightname">
             <p><?php echo ($_SESSION["username"]) ?></p>
         </div>
-
+        <a href="../projectpage/index.php" id="createnewprojectbtn">
+            <button id="newprojectbtn" type="button">Create new project</button>
+        </a>
         <div id="currentpro">
             <h3>Current Projects</h3>
             
