@@ -13,9 +13,15 @@ if(!isset($_SESSION["username"])){
   exit;
 }
  ?>
-     
    
     <h2>Create new project</h2>
+    <a href="/logout.php" id="toprightlogout">
+            <button id="logoutbutton" type="button">Logout</button>
+        </a>
+
+        <div id="toprightname">
+            <p><?php echo ($_SESSION["username"]) ?></p>
+        </div>
     <form action="register.php" method="post">
       <div class="container">
         <div class="textbox">
