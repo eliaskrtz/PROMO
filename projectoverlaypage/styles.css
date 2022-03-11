@@ -97,17 +97,9 @@ h3 {
     justify-content: center;
 }
 
-.grid-container-sceneoverview {
-    display: grid;
-    width: 40%;
-    grid-template-columns: 1fr;
-    margin-right: 5%;
-}
-
 .grid-container-project {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
 }
 
 .sceneoverview {
@@ -118,6 +110,7 @@ h3 {
     padding: 1% 1% 1% 1%;
     flex-direction: column;
     justify-content: flex-start;
+    width: 40%;
 }
 
 .projectname {
