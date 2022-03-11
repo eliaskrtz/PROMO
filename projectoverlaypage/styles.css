@@ -91,7 +91,26 @@ h3 {
     margin: 0% 1% 3% 0%;
 }
 
-#currentpro {
+.grid-container-all {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    justify-content: center;
+}
+
+.grid-container-sceneoverview {
+    display: grid;
+    width: 40%;
+    grid-template-columns: 1fr;
+    margin-right: 5%;
+}
+
+.grid-container-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.sceneoverview {
     display: flex;
     margin-top: 0%;
     background: none;
@@ -101,28 +120,28 @@ h3 {
     justify-content: flex-start;
 }
 
-#listcurpro {
+.projectname {
     display: flex;
-    background: none;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-#prevpro {
-    display: flex;
-    margin-top: 5%;
+    margin-top: 0%;
     background: none;
     border: 0.1em solid white;
     padding: 1% 1% 1% 1%;
-    flex-direction: column;
-    justify-content: flex-start;
 }
 
-#listprevpro {
+.projectnumber {
     display: flex;
+    margin-top: 0%;
     background: none;
-    flex-direction: column;
-    justify-content: flex-start;
+    border: 0.1em solid white;
+    padding: 1% 1% 1% 1%;
+}
+
+.date {
+    display: flex;
+    margin-top: 0%;
+    background: none;
+    border: 0.1em solid white;
+    padding: 1% 1% 1% 1%;
 }
 
 dl {
