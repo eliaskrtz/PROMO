@@ -12,7 +12,7 @@ if(!isset($_SESSION["username"])){
     </head>
 
     <header>
-        <h1>ProMotion</h1>
+        <h1>Slate</h1>
     </header>
 
     <body>
@@ -23,19 +23,19 @@ if(!isset($_SESSION["username"])){
         <div id="toprightname">
             <p><?php echo ($_SESSION["username"]) ?></p>
         </div>
-        <a href="../projectpage/index.php" id="createnewprojectbtn">
+        <a href="../createnewprojectpage/index.php" id="createnewprojectbtn">
             <button id="newprojectbtn" type="button">Create new project</button>
         </a>
         <div id="currentpro">
-            <h3>Current Projects</h3>
+            <a href="../projectoverlaypage/index.php"><h3>Current Projects</h3></a>
             
             <dl id="listcurpro">
-                <a href="/mainpage/index.html">
+                <a href="/mainpage/index.php">
                     <dt>Testprojekt1</dt>
                     <dd>Testbeschreibung1</dd>
                 </a>
                 <br>
-                <a href="/mainpage/index.html">
+                <a href="/mainpage/index.php">
                     <dt>Testprojekt2</dt>
                     <dd>Testbeschreibung2</dd>
                 </a>  
@@ -46,12 +46,12 @@ if(!isset($_SESSION["username"])){
             <h3>Previous Projects</h3>
 
             <dl id="listcprevpro">
-                <a href="/mainpage/index.html">
+                <a href="/mainpage/index.php">
                     <dt>Testprojekt3</dt>
                     <dd>Testbeschreibung3</dd>
                 </a>
                 <br>
-                <a href="/mainpage/index.html">
+                <a href="/mainpage/index.php">
                     <dt>Testprojekt4</dt>
                     <dd>Testbeschreibung4</dd>
                 </a>  

@@ -47,7 +47,7 @@
     </div>
 
     <div class="bottomcontainer" style="background-color:#f1f1f1">
-      <a href="../projectpage/index.php">
+      <a href="../mainpage/index.php">
         <button type="button" class="cancelbtn">Cancel</button> 
       </a>
     </div>
