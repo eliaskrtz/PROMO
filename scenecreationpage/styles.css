@@ -18,16 +18,57 @@
     display: flex;
     flex-direction: column;
     background-color: #1e1e1e;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    height: 60%;
  }
 
- a {
-     text-decoration: none;
-     color: #1e1e1e;
- }
 
- #alreadyacc {
-   margin-left: 3%;
- }
+ body {
+  display: flex;
+  flex-flow: column;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#toprightlogout {
+  display: flex;
+  height: 6.5%;
+  min-height: 2vw;
+  max-height: 5vw;
+  width: 14%;
+  flex-direction: column;
+  justify-content: center;
+  background: none;
+  border: 0.1em solid white;
+  margin-top: 2%;
+  /*position*/
+  position: relative;
+  top: -10vw;
+  right: -84vw;
+}
+
+#toprightname {
+  display: flex;
+  height: 6.5%;
+  min-height: 2vw;
+  max-height: 5vw;
+  width: 14%;
+  justify-content: center;
+  background: none;
+  border: 0.1em solid transparent;
+  /*position*/
+  position: relative;
+  top: -10vw;
+  right: -84vw;
+}
 
    /* Full-width inputs */
   input[type=text], input[type=password] {
@@ -39,8 +80,16 @@
     box-sizing: border-box;
   }
 
-  .registerbutton{
-      width: 40%;
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    opacity: 0.8;
   }
 
    .text {
@@ -64,7 +113,6 @@
     padding: 14px 20px;
     border: none;
     cursor: pointer;
-    width: 30%;
   }
    /* Add a hover effect for buttons */
   button:hover {
@@ -97,12 +145,14 @@
     padding: 16px;
   }
   
-  .bottomcontainer {
-    margin: auto;
+  footer {
+    margin-top: 5%;
     padding: 16px;
     width: 97%;
-    position: absolute;
+    position: relative;
     bottom: 10px;
+    text-align: start;
+    background-color:#f1f1f1;
   }
    /* The "Forgot password" text */
   span.psw {
@@ -119,51 +169,7 @@
       width: 100%;
     }
   }
- 
-    #toprightlogout {
-        display: flex;
-        height: 6.5%;
-        min-height: 2vw;
-        max-height: 5vw;
-        width: 14%;
-        flex-direction: column;
-        justify-content: center;
-        background: none;
-        border: 0.1em solid white;
-        margin-top: 2%;
-        /*position*/
-        position: relative;
-        top: -10vw;
-        right: -84vw;
-    }
-
-    #toprightname {
-        display: flex;
-        height: 6.5%;
-        min-height: 2vw;
-        max-height: 5vw;
-        width: 14%;
-        justify-content: center;
-        background: none;
-        border: 0.1em solid transparent;
-        /*position*/
-        position: relative;
-        top: -10vw;
-        right: -84vw;
-    }   
-    .dropbtn {
-      background-color: #04AA6D;
-      color: white;
-      padding: 14px 20px;
-      border: none;
-      cursor: pointer;
-      width: 30%;
-    }
-    
-    .dropbtn:hover, .dropbtn:focus {
-      opacity: 0.8;
-    }
-    
+     
     #myInput {
       box-sizing: border-box;
       background-image: url('searchicon.png');
