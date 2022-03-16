@@ -1,10 +1,19 @@
 <html>
-    <head>
+
+<?php
+session_start();
+if(!isset($_SESSION["username"])){
+  header("Location: index.php");
+  exit;
+}
+ ?>
+
+<head>
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <header>
-        <h1>ProMotion</h1>
+        <h1>Slate</h1>
     </header>
 
     <body>

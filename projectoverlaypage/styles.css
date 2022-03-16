@@ -143,10 +143,6 @@ dl {
     width: max-content;
 }
 
-#content {
-
-}
-
 #scenelist {
     display: flex;
     margin-bottom: 2rem;
