@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+
+<?php
+session_start();
+if(!isset($_SESSION["username"])){
+  header("Location: index.php");
+  exit;
+}
+ ?>
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -32,7 +41,7 @@
   <h1 id="mainheading">Slate</h1>
 
   <a href="/logout.php" id="toprightlogout">
-    <button id="logoutbutton" type="button">Logout</button>
+    <p>Logout</p>
   </a>
 
   <div id="toprightname">
@@ -118,14 +127,13 @@
       </div>
 
     </div>
-
-    <div class="bottomcontainer" style="background-color:#f1f1f1">
+  </form>
+  </body>
+  <footer>
+    <div class="bottomcontainer">
       <a href="../projectpage/index.php">
         <button type="button" class="cancelbtn">Cancel</button>
       </a>
     </div>
-
-  </form>
-    <br>
-  </body>
+  </footer>
 </html>
