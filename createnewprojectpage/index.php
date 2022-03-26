@@ -7,11 +7,24 @@
     header("Location: index.php");
   exit;
   }
+  
+  if(isset($_POST["submit"])){
+    require("../mysql.php");
+
+    $stmt = $mysql->prepare("INSERT INTO projects (PROJECTNAME, FINISHDATE, PROJECTNOTE) VALUES (:pname, :pdate, :pnote)");
+    $stmt->bindParam(":pname", $_POST["projectname"]);
+    $stmt->bindParam(":pdate", $_POST["finishdate"]);
+    $stmt->bindParam(":pnote", $_POST["projectdescription"]);
+    $stmt->execute();
+
+    header("Location: ../mainpage/index.php");
+  }
+
 ?>
 
 <head>
   <meta charset="utf-8">
-  <title>Account erstellen</title>
+  <title>Project erstellen</title>
   <link rel="stylesheet" href="styles.css">
 </head>
   
@@ -26,7 +39,7 @@
     <p><?php echo ($_SESSION["username"]) ?></p>
   </div>
 
-  <form action="register.php" method="post">
+  <form action="index.php" method="post">
     
     <div class="container">
       <div class="textbox">
@@ -34,7 +47,7 @@
       </div>
         
       <div class="textbox">
-        <input type="text" placeholder="Finish date" name="creationdate" required>
+        <input type="text" placeholder="Finish date:  YYYY-MM-DD" name="finishdate" required>
       </div>
       
       <div class="textbox">

@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$name = "promo";
+$name = "slate";
 $user = "root";
 $passwort = "";
 try{

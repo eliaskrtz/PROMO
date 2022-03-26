@@ -32,6 +32,8 @@
       }
     }
      ?>
+
+     
     <h1 id="mainheading">ProMotion</h1>
     <h2>Register</h2>
     <form action="register.php" method="post">
