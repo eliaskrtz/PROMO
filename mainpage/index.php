@@ -7,9 +7,10 @@ if(!isset($_SESSION["username"])){
 require("../mysql.php");
     
     $db=mysqli_connect('localhost','root','','slate') or die('Error connecting to MySQL Server.');
-
     
-    $query="SELECT PROJECTNAME, FINISHDATE, PROJECTNOTE FROM projects ORDER BY FINISHDATE ASC" ; 
+    $username = $_SESSION["username"];
+    
+    $query="SELECT PROJECTNAME, FINISHDATE, PROJECTNOTE, USERNAME FROM projects WHERE USERNAME = '$username' ORDER BY FINISHDATE ASC" ; 
     
     
     mysqli_query($db,$query) or die('Error querying database.');
@@ -20,7 +21,6 @@ require("../mysql.php");
     while ($row=mysqli_fetch_array($result)) {
         $var[$i] = $row['PROJECTNAME'] . "<br \>" . $row['PROJECTNOTE'];
         $i++;
-        echo $i;
     }
 
     mysqli_close($db);
@@ -53,8 +53,6 @@ require("../mysql.php");
             <dl id="listcurpro">
                 <a href=""><dt><?php echo $var[0]; ?></dt><br></a>
                 <a href=""><dt><?php echo $var[1]; ?></dt><br></a>
-                <a href=""><dt><?php echo $var[2]; ?></dt><br></a>
-                <a href=""><dt><?php echo $var[3]; ?></dt><br></a>
             </dl>
          </div>
          </div>

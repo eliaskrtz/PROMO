@@ -11,10 +11,11 @@
   if(isset($_POST["submit"])){
     require("../mysql.php");
 
-    $stmt = $mysql->prepare("INSERT INTO projects (PROJECTNAME, FINISHDATE, PROJECTNOTE) VALUES (:pname, :pdate, :pnote)");
+    $stmt = $mysql->prepare("INSERT INTO projects (PROJECTNAME, FINISHDATE, PROJECTNOTE, MEMBERID) VALUES (:pname, :pdate, :pnote, :collab)");
     $stmt->bindParam(":pname", $_POST["projectname"]);
     $stmt->bindParam(":pdate", $_POST["finishdate"]);
     $stmt->bindParam(":pnote", $_POST["projectdescription"]);
+    $stmt->bindParam(":collab", $_POST["collab"]);
     $stmt->execute();
 
     header("Location: ../mainpage/index.php");
@@ -52,6 +53,10 @@
       
       <div class="textbox">
         <input type="text" placeholder="Projectdescription" name="projectdescription" required>
+      </div>
+
+      <div class="textbox">
+        <input type="text" placeholder="Collaborator" name="collab" required>
       </div>
       
       <div class="textbox">
